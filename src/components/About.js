@@ -43,10 +43,19 @@ const About = () => {
                         </div>
                     </div>
                     <div className="order-1 md:order-2 flex justify-center">
-                        <div className="w-64 h-64 bg-gradient-to-br from-primary to-blue-600 rounded-full flex items-center justify-center">
-                            <div className="text-white text-center">
-                                <div className="text-6xl font-bold mb-2">JD</div>
-                                <div className="text-lg">Full Stack Developer</div>
+                        <div className="relative group">
+                            <div className="w-64 h-64 bg-gradient-to-br from-primary to-blue-600 rounded-full flex items-center justify-center overflow-hidden transition-all duration-300">
+                                <img
+                                    src="/hero.jpg"
+                                    alt="Profile"
+                                    className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-30"
+                                />
+                                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <div className="text-white text-center">
+                                        <div className="text-2xl font-bold mb-1">Phoun Phan</div>
+                                        <div className="text-lg">Full Stack Developer</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
